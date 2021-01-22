@@ -19,6 +19,7 @@ const getIndexToIns = (arr, num) => {
 }
 
 console.log(getIndexToIns([40, 60, 5], 50))
+// expected outcome 2
 
 // Challenge 2
 // Sum All Numbers in a Range
@@ -35,3 +36,4 @@ const sumAll = (arr) => {
 }
 
 console.log(sumAll([1, 4]))
+// expected outcome 10
