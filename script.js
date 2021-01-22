@@ -59,3 +59,37 @@ const diffArray = (arr1, arr2) => {
 
 console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]))
 // expected outcome [4]
+
+// Challenge 4
+// Roman Numeral Converter (convert given number into a roman numeral)
+
+const convertToRoman = (num) => {
+    const romanNumeral = {
+        M: 1000,
+        CM: 900,
+        D: 500,
+        CD: 400,
+        C: 100,
+        XC: 90,
+        L: 50,
+        XL: 40,
+        X: 10,
+        IX: 9,
+        V: 5,
+        IV: 4,
+        I: 1
+    }
+
+    let roman = ""
+
+    for (let key in romanNumeral) {
+        while(num >= romanNumeral[key]) {
+            roman += key
+            num -= romanNumeral[key]
+        }
+    }
+    return roman
+}
+
+console.log(convertToRoman(8))
+
