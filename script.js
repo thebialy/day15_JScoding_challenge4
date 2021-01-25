@@ -18,7 +18,7 @@ const getIndexToIns = (arr, num) => {
     return arr.length
 }
 
-console.log(getIndexToIns([40, 60, 5], 50))
+getIndexToIns([40, 60, 5], 50)
 // expected outcome 2
 
 // Challenge 2
@@ -35,7 +35,7 @@ const sumAll = (arr) => {
     return total
 }
 
-console.log(sumAll([1, 4]))
+sumAll([1, 4])
 // expected outcome 10
 
 // Challenge 3
@@ -57,7 +57,7 @@ const diffArray = (arr1, arr2) => {
     return newArr
 }
 
-console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]))
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])
 // expected outcome [4]
 
 // Challenge 4
@@ -91,5 +91,5 @@ const convertToRoman = (num) => {
     return roman
 }
 
-console.log(convertToRoman(8))
+convertToRoman(8)
 
